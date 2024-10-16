@@ -1,0 +1,9 @@
+.frame{
+     border-collapse: collapse ;
+
+}
+th,td{
+    border: 1px solid;
+    color: pink;
+    background-color: rgb(177, 66, 177);
+}
