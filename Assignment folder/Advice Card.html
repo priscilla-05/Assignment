@@ -39,16 +39,23 @@
     .divider{
         margin: 0 auto;
     }
-    .dice{
+
+    .dice-button{
+        background-color: #53ffaa;
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
         position: absolute;
         bottom: -65px;
         left: 50%;
         transform: translate(-50%,-50%);
-        background-color: #53ffaa;
-        border-radius: 100% groove;
-        display: flex;
-        padding: 20px;
-        
+    }
+
+    .dice{
+        position: absolute;
+        bottom: 6px;
+        left: 50%;
+        transform: translate(-50%,-50%);        
     }
     .text{
         color: #CEE3E9;
@@ -64,6 +71,7 @@
             </blockquote>
             <div class="divider">
                 <img src="./divider.jpg" alt="">
+                 
                 <div class="dice-button">
                     <img class="dice" src="./dice.jpg" alt="">
             
