@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Card</title>
+    <!-- <script defer src="script2.js"></script> -->
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      justify-content: center;
+      /* background-color: blueviolet */
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+    }
+    .input-field {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid grey;
+      border-radius: 4px;
+    }
+    .submit-button {
+      width: 80%;
+      padding: 10px;
+      background-color: rgb(175, 165, 76);
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+  <body>
+    <div class="card">
+      <marquee behavior="" direction="">Created October2024</marquee>
+      <h2>Login</h2>
+      <input
+        type="text"
+        id="name"
+        class="input-field"
+        placeholder="Name"
+        required
+      />
+      <br /><br />
+      <input
+        type="email"
+        id="email"
+        class="input-field"
+        placeholder="Email"
+        required
+      />
+      <br /><br />
+      <input
+        type="password"
+        id="password"
+        class="input-field"
+        placeholder="Password"
+        required
+      />
+      <br /><br />
+      <button class="submit-button">Submit</button>
+    </div>
+    <script>
+      // ASSIGNMENT 5
+      //  Create a card at the middle of the screen browser, with an input fields for name, email, and password and a submit button styled beautifully. Write a program such that when the submit button is clicked the program checks if the password matches with the original password (which should be October2024 exactly) then navigate the user to any of your favorite online website.
+
+      //   Answer
+      let htmlBody = document.querySelector("body");
+      htmlBody.style.backgroundImage = "url(./sunset.jpg)";
+      htmlBody.style.backgroundRepeat = "no-repeat";
+      htmlBody.style.backgroundSize = "cover";
+
+      let userPassword = document.querySelector("#password");
+      let userSubmit = document.querySelector(".submit-button");
+
+      userSubmit.addEventListener("click", function () {
+        if (userPassword.value == "October2024") {
+          window.location = "http://www.amazon.com";
+        } else {
+          alert("Incorrect password. Please try again.");
+        }
+      });
+    </script>
+  </body>
+</html>
