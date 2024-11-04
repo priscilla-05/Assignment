@@ -36,6 +36,20 @@
       cursor: pointer;
       border-radius: 4px;
     }
+    .footer{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 12px;
+        background-color: brown;
+        padding: 3%;
+        border-radius: 100%;
+        color: grey;
+    }
+    .footer span{
+        color: white;
+    }
+    
   </style>
   <body>
     <div class="card">
@@ -46,8 +60,9 @@
         id="name"
         class="input-field"
         placeholder="Name"
-        required
+        required  
       />
+      
       <br /><br />
       <input
         type="email"
@@ -67,6 +82,10 @@
       <br /><br />
       <button class="submit-button">Submit</button>
     </div>
+    <div class="footer">
+      <span>Designed by Priscilla</span>
+  </div>
+
     <script>
       // ASSIGNMENT 5
       //  Create a card at the middle of the screen browser, with an input fields for name, email, and password and a submit button styled beautifully. Write a program such that when the submit button is clicked the program checks if the password matches with the original password (which should be October2024 exactly) then navigate the user to any of your favorite online website.
